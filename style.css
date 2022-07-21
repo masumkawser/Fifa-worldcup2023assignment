@@ -187,18 +187,30 @@
     }
      /* mobile divece */
      @media only screen and (max-width:668px) {
-        .heading-class ,.container, .section-2,.football-time{  grid-template-columns: repeat(1,1fr);
+        .heading-class ,.container, .section-2,.football-time,.galary-card,.footbal{  grid-template-columns: repeat(1,1fr);
  justify-content: center;
         }
         .footer-nav{
             display: flex;
             flex-direction:row-reverse;
         }
-        .galary-card {
+        .galary-card,.container,.box,.football-time,.galary-card,.footbal {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             gap: 10px;
         }
+        .galary-card{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            column-gap: 10px;
+            row-gap: 10px;
+           } 
+    }
+    .galary-card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
     }
     /* tablet device */
     
@@ -253,12 +265,12 @@
                
                 
             }
-            /* .galary-card{
+             .galary-card{
                 display: grid;
                 grid-template-columns: repeat(2,1fr);
                 column-gap: 10px;
                 row-gap: 10px;
-               } */
+               } 
            
         }
 /* 2ndwebsite css */
